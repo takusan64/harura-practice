@@ -1,12 +1,10 @@
 table:
-  name: profiles
+  name: online_users
   schema: public
 select_permissions:
-  - role: public
+  - role: user
     permission:
       columns:
-        - description
         - id
-        - name
+        - last_seen
       filter: {}
-      limit: 10
